@@ -3,3 +3,29 @@
 .myContainer{
     margin-top: 75px; 
 }
+
+.myNavDiv {
+    display: inline-flex;
+}
+
+.teste {
+    background-color: rgb(40, 46, 51);
+    color: white;
+    border-radius: 20px;
+}
+
+body {
+    background-image: url(../media/bodybg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.mycarou {
+    color: white;
+}
+
+.imgs {
+    border-radius: 20px;
+}
+
+
