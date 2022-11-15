@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar, Classe de texo, ícone, container, grid system, cards, carrossel accordion mapa form e + 2 componentes -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="myNavDiv">
+                <a class="navbar-brand" href="index.html"><img src="media/logo.png" alt="Logo Stranger Things TV"
+                        width="10%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegue pelo site:</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hawkins.html"><i class="bi bi-building"></i> Hawkings</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-person"></i> Personagens Principais
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="eleven.html">Eleven (Jane Hopper)</a></li>
+                                <li><a class="dropdown-item" href="dustin.html">Dustin Henderson</a></li>
+                                <li><a class="dropdown-item active" href="mike.html">Mike Wheeler</a></li>
+                                <li><a class="dropdown-item" href="lucas.html">Lucas Sinclair</a></li>
+                                <li><a class="dropdown-item" href="will.html">Will Byers</a></li>
+                                <li><a class="dropdown-item" href="max.html">Max Mayfield</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="members.html"><i class="bi bi-people-fill"></i></i> Seja membro</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container teste mt-3">
+        <div class="row">
+            <div class="col-md-8" >
+                <h4 class="display-4">Mike Wheeler</h4>
+                    <p>Michael "Mike" Wheeler, interpretado por Finn Wolfhard, é um dos personagens principais na série original da Netflix, Stranger Things. Ele é o melhor amigo de Will Byers, Lucas Sinclair e Dustin Henderson, também sendo irmão de  Nancy. Ele ficou amigo de  Eleven, eventualmente formando uma forte ligação com ela.</p>
+                    <p> Mike nasceu em 1971, sendo parte da família Wheeler, vivendo em Hawkins com sua mãe Karen e seu pai Ted, e suas duas irmãs Nancy e Holly.
+                    </p>
+                    <p> Mike é melhor amigo de Lucas Sinclair e Will Byers desde bem pequeno. Na quarta série, Dustin Henderson chegou na escola e se juntou ao seu grupo de amigos. Eles costumavam se reunir na casa de Mike para jogar Dungeons & Dragons. Os quatros garotos tem uma boa relação com seu professor de ciências,  Mr. Clarke, e são membros do Clube Audiovisual. Eles participaram da feira de ciências anuais, vencendo todo ano.
+                    </p>
+                    <p>Quando seu melhor amigo, Will Byers , desapareceu, ele e seus amigos, Lucas e Dustin , fizeram uma missão de encontrá-lo. No entanto, enquanto procuravam por Will, eles encontraram uma garota no meio da floresta chamada Onze . Logo Mike descobriu que ela sabia algo sobre o desaparecimento de Will e pediu sua ajuda para encontrá-lo. Durante seu tempo juntos, Mike e Onze formaram um forte vínculo e rapidamente começaram a gostar um do outro. Assim que Will foi encontrado, Mike ficou feliz por ter voltado para casa em segurança; no entanto, ele ficou muito devastado pelo sacrifício de Onze para derrotar o Demogorgon.</p>
+                    <h5 class="display-6">Relacionamentos</h5>
+                    <ul>
+                        <li>Will Byers – Melhor amigo</li>
+                        <li>Lucas Sinclair – Melhor amigo e vizinho</li>
+                        <li>Dustin Henderson – Melhor amigo</li>
+                        <li>Eleven – Amiga e interesse romântico</li>
+                        <li>Nancy Wheeler - Irmã</li>
+                        <li>Holly Wheeler- Irmã</li>
+                        <li>Karen Wheeler - Mãe</li>
+                        <li>Ted Wheeler - Pai</li>
+                        <li>Scott Clarke - Professor de ciências</li>
+                        <li>Troy - Inimigo</li>
+                    </ul>
+                </div>
+            <div class="col-md-4 m">
+                <div id="carouselExample" class="carousel slide m-3 mycarou" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner imgs">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="media/mike1983.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Mike em 1983</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="media/mike1984.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Mike em 1984</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/mike1985.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Mike em 1985</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/mike1986.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Mike em 1986</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="co">
+                    <h5>Conhecido como:</h5>
+                    <ul>
+                        <li>Michael</li>
+                        <li>Mestre das Masmorras</li>
+                        <li>Cara de Sapo</li>
+                    </ul>
+                    <h5>Idade:</h5>
+                    <ul>
+                        <li>12 (Primeira temporada)</li>
+                        <li>13 (Segunda temporada)</li>
+                        <li>14 (terceira temporada)</li>
+                        <li>15 (Quarta temporada)</li>
+                    </ul>
+                    <h5>Residência:</h5>
+                    <ul>
+                        <li>Casa dos Wheelers, Maple Street</li>
+                    </ul>
+                    <h5>Status de Relacionamento:</h5>
+                    <ul>
+                        <li>Namorando com a Onze</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
