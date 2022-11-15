@@ -20,6 +20,12 @@ body {
     background-attachment: fixed;
 }
 
+@media (max-width: 767px) {
+    body {
+        background-image: url(../media/bodybgcell.jpg);
+    }
+}
+
 .mycarou {
     color: white;
 }
@@ -34,6 +40,14 @@ p {
 
 .co {
     padding-left: 7%;
+}
+
+#total {
+    background-color: rgba(0%, 0%, 0%, 0);
+    color: white;
+    font-weight: bold;
+    border-color: rgba(0%, 0%, 0%, 0);
+    font-size: 25px;
 }
 
 

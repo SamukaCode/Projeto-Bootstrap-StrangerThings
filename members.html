@@ -10,9 +10,11 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script src="js/form.js"></script>
+    <script src="js/cep.js"></script>
 </head>
 
 <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <!-- Navbar, Classe de texo, ícone, container, grid system, cards, carrossel accordion mapa form e + 2 componentes -->
 
@@ -36,7 +38,8 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house"></i> Página Inicial</a>
+                            <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house"></i> Página
+                                Inicial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="hawkins.html"><i class="bi bi-building"></i> Hawkings</a>
@@ -58,9 +61,10 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                             </ul>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="members.html"><i class="bi bi-people-fill"></i></i> Seja membro</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="members.html"><i class="bi bi-people-fill"></i></i> Seja
+                                membro</a>
+                        </li>
                         </li>
                     </ul>
                 </div>
@@ -68,115 +72,224 @@
         </div>
     </nav>
 
-    <div class="container myContainer">
-        <p class="lead">Preencha o formulário abaixo e seja membro</p>
+    <div class="container teste mt-3">
+        <h5 class="display-5 p-3"><i class="bi bi-people-fill"></i> Clube Stranger</h5>
+        <p class="lead p-2">Seja um dos primeiros membros do exclusivo Clube Stranger preenchendo os dados abaixo.</p>
 
-        <form class="needs-validation" novalidate>
+
+        <form class="needs-validation p-2" novalidate>
             <div class="row">
-                <div class="col-md-6 col-sm-12  mt-3">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" name="nome" class="form-control" required>
+                <div class="lead">
+                    <b><i class="bi bi-wallet"></i> Dados Pessoais</b>
+                </div>
+                <div class="col-md-5 col-sm-12 mt-3">
+                    <label for="nome" class="form-label">Nome Completo:</label>
+                    <input type="text" name="nome" class="form-control" placeholder="Ex: Roberto da Silva" required>
                     <div class="invalid-feedback">
-                        Campo obrigatório!
+                        Preencha o campo.
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12  mt-3">
+                <div class="col-md-4 col-sm-12 mt-3">
                     <label for="email" class="form-label">E-mail:</label>
-                    <input type="text" name="email" class="form-control">
+                    <input type="text" name="email" class="form-control" placeholder="Ex: nome@email.com" required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
                 </div>
 
-                <div class="col-md-2 col-sm-12  mt-3">
+                <div class="col-md-3 col-sm-12 mt-3">
                     <label for="telefone" class="form-label">Telefone:</label>
-                    <input type="text" name="telefone" class="form-control">
+                    <input name="telefone" class="form-control" placeholder="Ex: 19987879898" type="tel" maxlength="15"
+                        onkeyup="handlePhone(event)" required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-6 col-sm-12  mt-3">
-                    <label for="cidade" class="form-label">Cidade:</label>
-                    <input type="text" name="cidade" class="form-control">
-                </div>
-
-                <div class="col-md-2 col-sm-12  mt-3">
-                    <label for="estado" class="form-label">Estado:</label>
-                    <select name="estado" id="estado" class="form-select">
-                        <option value="empty"></option>
-                        <option value="sp">SP</option>
-                        <option value="rj">RJ</option>
-                    </select>
-                </div>
-
-                <div class="col-md-4 col-sm-12  mt-3">
+                <div class="col-md-3 col-sm-12 mt-3">
                     <label for="cep" class="form-label">CEP:</label>
-                    <input type="text" name="cep" class="form-control">
+                    <input type="text" name="cep" class="form-control" id="cep" placeholder="Ex: 13.220-345" required
+                        oninput="mascaracep(this)">
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 mt-3">
+                    <label for="endereco" class="form-label">Rua/Avenida:</label>
+                    <input type="text" name="endereco" id="endereco" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 mt-3">
+                    <label for="numero" class="form-label">Número:</label>
+                    <input type="text" name="numero" id="numero" class="form-control" placeholder="Ex: 100" required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
                 </div>
             </div>
 
-            <div class="row mt-4">
-                <p class="lead">Informações do Plano</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Basic
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Standard
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                    <label class="form-check-label" for="flexRadioDefault3">
-                      Ultimate
-                    </label>
-                  </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 mt-3">
+                    <label for="complemento" class="form-label">Complemento:</label>
+                    <input type="text" name="complemento" class="form-control" id="complemento"
+                        placeholder="Ex: Apto. 102, Bloco 2" required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 mt-3">
+                    <label for="bairro" class="form-label">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" class="form-control"
+                        placeholder="Ex: Jardim das Palmeiras" required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 mt-3">
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Ex: Limeira"
+                        required>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 mt-3">
+                    <label for="uf" class="form-label">Estado:</label>
+                    <select name="uf" id="uf" class="form-select" required>
+                        <option value="none">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Preencha o campo.
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="lead"><b><i class="bi bi-wallet-fill"></i> Informações de Plano:</b></div>
+                <ul style="margin-left: 4%">
+                    <li><b>Pacote Stranger Ultimate</b>: blablabla</li>
+                    <li><b>Pacote Stranger Premium</b>: blablabla</li>
+                    <li><b>Pacote Stranger Basic</b>: blablabla</li>
+                </ul>
             </div>
             <div class="row">
-                <p class="lead">Informações de Pagamento</p>
-                <label for="produto" class="form-label mt-3">Produto Escolhido:</label><br>
-                    <select onchange="muda()" id="produto" name="produto" required class="form-control">
+                <div class="lead">
+                    <b><i class="bi bi-cash"></i> Dados de Pagamento</b>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mt-3">
+                    <label for="produto" class="form-label">Produto Escolhido:</label><br>
+                    <select onchange="muda()" id="produto" name="produto" required class="form-select">
                         <option value="R$ 0,00" selected>Selecione uma opção.</option>
                         <option value="R$ 199,90">Pacote Stranger Ultimate: R$ 199,90</option>
-                        <option value="R$ 149,90">Pacote Stranger Standard: R$ 149,90</option>
+                        <option value="R$ 149,90">Pacote Stranger Premium: R$ 149,90</option>
                         <option value="R$ 99,90">Pacote Stranger Basic: R$99,90</option>
                     </select>
-                    <br>
-                    <label for="credit" class="form-label mt-3">Número do Cartão de Crédito:</label><br>
-                    <input oninput="mascarac(this)" type="text" name="credit" minlength="16" required class="form-control">
-                    
-                    <label for="parc" class="form-label mt-3">Parcelamento:</small></label><br>
-                        <select class="form-control">
-                            <option value="1" selected>1x - sem juros.</option>
-                            <option value="2">2x - sem juros.</option>
-                            <option value="3">3x - com juros.</option>
-                        </select>
-                    
-                    <label for="bdr" class="form-label mt-3">Bandeira do Cartão:</label>
-                        <select name="bdr" id="bdr" tabindex="14" class="form-control">
+                </div>
+
+                <div class="col-md-3 col-sm-12 mt-3">
+                    <label for="bdr" class="form-label">Bandeira do Cartão:</label>
+                    <select name="bdr" id="bdr" tabindex="14" class="form-select">
                         <option value="master">MasterCard</option>
                         <option value="visa">Visa</option>
+                        <option value="elo">Elo</option>
                     </select>
+                </div>
 
-                    <label for="cvv" class="form-label mt-3">Código de Segurança do Cartão:</label><br>
-                    <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required class="form-control"><br>
-                    
-                    <span style="font-size: 25px" class="form-label mt-3">Total:</span>
-                    <input type="text" name="total" id="total" value="R$ 0,00" readonly class="form-control">
-            </div>
-
-            <button type="submit" class="btn btn-danger mt-3"><i class="bi bi-send"> Enviar</i></button>
-            <button type="reset" class="btn btn-danger mt-3"><i class="bi bi-x-circle"> Limpar</i></button>
-
+                <div class="col-md-3 col-sm-12 mt-3">
+                    <label for="parc" class="form-label">Parcelamento:</small></label><br>
+                    <select class="form-select">
+                        <option value="1" selected>1x - sem juros.</option>
+                        <option value="2">2x - sem juros.</option>
+                        <option value="3">3x - com juros.</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mt-3">
+                        <label for="credit" class="form-label">Número do Cartão de Crédito:</label><br>
+                        <input oninput="mascarac(this)" type="text" name="credit" minlength="16" required
+                            class="form-control">
+                    </div>
+                    <div class="col-md-3 col-sm-12 mt-3">
+                        <label for="cvv" class="form-label">CVV:</label><br>
+                        <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required
+                            class="form-control">
+                    </div>
+                    <div class="col-md-3 col-sm-12 mt-3">
+                        <span style="font-size: 20px" class="form-label">Total:</span>
+                        <input type="text" name="total" id="total" value="R$ 0,00" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 col-sm-12 mt-3">
+                        <button type="submit" class="btn btn-danger mt-3"><i class="bi bi-send"> Enviar</i></button>
+                    </div>
+                    <div class="col-md-1 col-sm-12 mt-3">
+                        <button type="reset" class="btn btn-danger mt-3"><i class="bi bi-x-circle"> Limpar</i></button>
+                    </div>
+                </div>
         </form>
-    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/cep.js"></script>
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 
 </html>
