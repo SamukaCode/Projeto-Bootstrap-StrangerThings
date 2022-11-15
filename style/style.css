@@ -28,4 +28,12 @@ body {
     border-radius: 20px;
 }
 
+p {
+    text-align: justify;
+}
+
+.co {
+    padding-left: 7%;
+}
+
 
