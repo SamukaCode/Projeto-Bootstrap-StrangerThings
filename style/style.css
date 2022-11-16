@@ -25,6 +25,9 @@ body {
         background-image: url(../media/bodybgcell.jpg);
         background-position: bottom;
     }
+    .navbar-brand img {
+        width: 30%;
+    }
 }
 
 .centered {
