@@ -2,183 +2,289 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
 
-    <!-- Navbar, Classe de texto, ícone, container, grid system, cards, carrossel accordion mapa form e + 2 componentes -->
+  <!-- Navbar, Classe de texto, ícone, container, grid system, cards, carrossel accordion mapa form e + 2 componentes -->
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="myNavDiv">
-                <a class="navbar-brand" href="index.html"><img src="media/logo.png" alt="Logo Stranger Things TV"
-                        width="10%"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegue pelo site:</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i>
-                                Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hawkins.html"><i class="bi bi-building"></i> Hawkings</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="bi bi-person"></i> Personagens Principais
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="eleven.html">Eleven (Jane Hopper)</a></li>
-                                <li><a class="dropdown-item" href="dustin.html">Dustin Henderson</a></li>
-                                <li><a class="dropdown-item" href="mike.html">Mike Wheeler</a></li>
-                                <li><a class="dropdown-item" href="lucas.html">Lucas Sinclair</a></li>
-                                <li><a class="dropdown-item" href="will.html">Will Byers</a></li>
-                                <li><a class="dropdown-item" href="max.html">Max Mayfield</a></li>
-                                <!-- <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                            </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="members.html"><i class="bi bi-people-fill"></i></i> Seja membro</a>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="myNavDiv">
+        <a class="navbar-brand" href="index.html"><img src="media/logo.png" alt="Logo Stranger Things TV"
+            width="10%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegue pelo site:</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-    </nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i>
+                Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hawkins.html"><i class="bi bi-building"></i> Hawkins</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-person"></i> Personagens Principais
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="eleven.html">Eleven (Jane Hopper)</a></li>
+                <li><a class="dropdown-item" href="dustin.html">Dustin Henderson</a></li>
+                <li><a class="dropdown-item" href="mike.html">Mike Wheeler</a></li>
+                <li><a class="dropdown-item" href="lucas.html">Lucas Sinclair</a></li>
+                <li><a class="dropdown-item" href="will.html">Will Byers</a></li>
+                <li><a class="dropdown-item" href="max.html">Max Mayfield</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="members.html"><i class="bi bi-people-fill"></i></i> Seja membro! &nbsp<span
+                  class="badge bg-danger">NOVIDADE</span></a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    <div class="container teste mt-3">
-        <h5 class="display-5 p-2">SOBRE STRANGER THINGS</h5>
-        <p>STRANGER THINGS é uma websérie americana dos gêneros terror, sobrenatural e ficção científica criada pelos irmãos Matt e Ross Duffer e distribuída pela Netflix. Foi escrito e dirigido por Matt e teve Shawn Levy como produtor-executivo. Este emocionante drama original da Netflix premiado e estrelado pela atriz Winona Ryder como Joyce Byers, que vive em uma pequena cidade de Indiana em 1983 - inspirado em uma época em que em contos de ficção científica cativaram o público. Quando o filho de 12 anos de idade de Joyce Byer, Will, desaparece, ela lança uma investigação aterrorizante sobre o seu desaparecimento com as autoridades locais. Em busca de respostas, eles desvendam uma série de mistérios extraordinários envolvendo experimentos secretos do governo, forças sobrenaturais debilitantes e uma garota muito incomum..</p>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item text-white teste">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed teste" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Temporada 1
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <p>Stranger Things 1 se passa em 1983, em Indiana, onde um jovem desaparece. Enquanto amigos, família e a polícia local procuram por respostas, eles são atraídos para um ministério extraordinário envolvendo experimentos governamentais ultra-secretos, forças sobrenaturais aterrorizantes e uma menina muito estranha.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item text-white teste">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed teste" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Temporada 2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <p>O ano é de 1984 e os cidadãos de Hawkins, Indiana, ainda estão se recuperando dos horrores do Demogorgon e dos segredos do Laboratório Hawkins. Will Byers (Noah Schnapp) foi resgatado do Mundo Invertido, mas uma entidade maior e mais sinistra ainda ameaça aqueles que sobreviveram.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item text-white teste">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed teste" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Temporada 3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <p>É 1985 em Hawkins, Indiana, e está cada vez mais quente. O período escolar acabou, há um novo shopping na cidade e romances florescem. Mas novos perigos surgem. O mal não termina, evolui; e um verão pode mudar tudo.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item text-white teste">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed teste" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Temporada 4
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <p>Seis meses depois da batalha de Starcourt, que deixou um rastro de terror e destruição em Hawkins, o grupo de amigos se separa pela primeira vez, enquanto passam por um período turbulento na escola, o que dificulta ainda mais as coisas. Nesse momento vulnerável, surge uma ameaça sobrenatural ainda mais terrível, trazendo um grande mistério que pode ser a chave para acabar com os horrores do Mundo Invertido. </p>
-                  </div>
-                </div>
-              </div>
+  <div class="container ctblack mt-3">
+    <h5 class="display-5 p-2"><i class="bi bi-tv"></i> Stranger Things TV</h5>
+    <p>STRANGER THINGS é uma websérie americana dos gêneros terror, sobrenatural e ficção científica criada pelos irmãos
+      Matt e Ross Duffer e distribuída pela Netflix. Foi escrito e dirigido por Matt e teve Shawn Levy como
+      produtor-executivo. Este emocionante drama original da Netflix premiado e estrelado pela atriz Winona Ryder como
+      Joyce Byers, que vive em uma pequena cidade de Indiana em 1983 - inspirado em uma época em que em contos de ficção
+      científica cativaram o público. Quando o filho de 12 anos de idade de Joyce Byer, Will, desaparece, ela lança uma
+      investigação aterrorizante sobre o seu desaparecimento com as autoridades locais. Em busca de respostas, eles
+      desvendam uma série de mistérios extraordinários envolvendo experimentos secretos do governo, forças sobrenaturais
+      debilitantes e uma garota muito incomum.</p>
+    <p>Os irmãos Duffer desenvolveram a premissa da série em meados de 2015, e no roteiro original, o projeto se
+      chamaria Montauk, e seria ambientado na cidade de mesmo nome localizada em Nova Iorque, abordando as teorias da
+      conspiração envolvendo os experimentos secretos do governo americano em uma base militar na cidade no início da
+      década de 1980.</p>
+    <p>Após seu lançamento, Stranger Things recebeu aclamação do publico e da crítica especializada, que elogiaram a
+      caracterização, ritmo, atmosfera, atuações, trilha sonora, direção, roteiro e homenagens a filmes do gênero da
+      década de 1980.</p>
+    <div class="accordion accordion-flush text-bg-dark" id="accordionFlushExample">
+      <div class="accordion-item text-bg-dark ">
+        <h2 class="accordion-header text-bg-dark" id="flush-headingOne">
+          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Temporada 1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Em novembro de 1983, o estudante Will Byers é abduzido por uma criatura de uma realidade alternativa
+              chamada "Mundo Invertido", causando mistério e pavor aos habitantes de Hawkis, Indiana. Sua mãe, Joyce
+              Byers, tenta encontrar seu paradeiro com a ajuda do xerife Jim Hopper, enquanto Mike Wheeler, Dustin
+              Henderson e Lucas Sinclair fazem outra investigação para encontrá-lo, porém são surpreendidos quando uma
+              estranha garota com poderes telecinéticos chamada Onze aparece na cidade. Onze é uma fugitiva do
+              Laboratório Nacional de Hawkins, localizado nas proximidades, que faz ostensivamente pesquisas científicas
+              para o Departamento de Energia dos Estados Unidos e realiza secretamente experimentos paranormais e
+              sobrenaturais em humanos.</p>
           </div>
-          <h5 class="display-5 mt-3">Personagens</h5>
-          <div class="row">
-          <div class="card teste col-md-3" style="width: 18rem;">
-            <img src="media/eleven1986.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Eleven</h5>
-              <p class="card-text"></p>
-              <a href="eleven.html" class="btn btn-danger bg-danger">Saiba Mais</a>
-            </div>
+        </div>
+      </div>
+      <div class="accordion-item text-bg-dark">
+        <h2 class="accordion-header text-bg-dark" id="flush-headingTwo">
+          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Temporada 2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>O ano é de 1984 e os cidadãos de Hawkins, Indiana, ainda estão se recuperando dos horrores do Demogorgon
+              e dos segredos do Laboratório Hawkins. Em outubro de 1984, Will foi resgatado, mas poucos sabem dos
+              detalhes dos acontecimentos. Quando é descoberto que Will ainda está sendo influenciado por entidades do
+              Mundo Invertido, principalmente pela figura de uma criatura chamada Devorador de Mentes, seus amigos e
+              familiares se juntam para salvar Will da criatura e fechar o portal do mundo invertido.</p>
           </div>
-          <div class="card teste col-md-3" style="width: 18rem;">
-            <img src="media/mike1986.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mike</h5>
-              <p class="card-text"></p>
-              <a href="mike.html" class="btn btn-danger bg-danger">Saiba Mais</a>
-            </div>
+        </div>
+      </div>
+      <div class="accordion-item text-bg-dark">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Temporada 3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse text-bg-dark"
+          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>É 1985 em Hawkins, Indiana, e está cada vez mais quente. O período escolar acabou, há um novo shopping na
+              cidade e romances florescem. Mas novos perigos surgem. O mal não termina, evolui; e um verão pode mudar
+              tudo. Em julho de 1985, as crianças precisam lidar com os dilemas da adolescência, como romances e
+              amizades. Um dos novos pontos da cidade é o shopping Starcourt Mall, que começa a atrair atenção dos
+              moradores de Hawkins, colocando a maioria das outras lojas fora do mercado. Hopper fica cada vez mais
+              preocupado com o relacionamento de Onze e Mike enquanto ainda tenta cuidar de Joyce. Sem o conhecimento da
+              cidade, um laboratório secreto soviético está escondido nas profundezas do shopping, procurando abrir a
+              porta de entrada para o Mundo Invertido, permitindo que as entidades de lá possuam pessoas em Hawkins e
+              criando um novo horror para lugar.</p>
           </div>
-          <div class="card teste col-md-3" style="width: 18rem;">
-            <img src="media/will1986.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Will</h5>
-              <p class="card-text"></p>
-              <a href="will.html" class="btn btn-danger bg-danger">Saiba Mais</a>
-            </div>
+        </div>
+      </div>
+      <div class="accordion-item text-bg-dark">
+        <h2 class="accordion-header text-bg-dark" id="flush-headingFour">
+          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Temporada 4 &nbsp<span class="badge bg-danger">Spoiler Alert!</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse text-bg-dark"
+          aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Seis meses depois da batalha de Starcourt, que deixou um rastro de terror e destruição em Hawkins, o
+              grupo de amigos se separa pela primeira vez, enquanto passam por um período turbulento na escola, o que
+              dificulta ainda mais as coisas. Nesse momento vulnerável, surge uma ameaça sobrenatural ainda mais
+              terrível, trazendo um grande mistério que pode ser a chave para acabar com os horrores do Mundo Invertido.
+            </p>
           </div>
-          <div class="card teste col-md-4 col-lg-4 col-sm-1" style="width: 18rem;">
-            <img src="media/lucas1986.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Lucas</h5>
-              <p class="card-text"></p>
-              <a href="lucas.html" class="btn btn-danger bg-danger">Saiba Mais</a>
-            </div>
-          </div>
-          </div>
-          <div class="row">
-            <div class="card teste col-md-6" style="width: 18rem;">
-              <img src="media/max1986.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Max</h5>
-                <p class="card-text"></p>
-                <a href="max.html" class="btn btn-danger bg-danger">Saiba Mais</a>
-              </div>
-            </div>
-            <div class="card teste col-md-6" style="width: 18rem;">
-              <img src="media/dustin1986.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dustin</h5>
-                <p class="card-text"></p>
-                <a href="dustin.html" class="btn btn-danger bg-danger">Saiba Mais</a>
-              </div>
-            </div>
-            </div>
+        </div>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <h5 class="display-6 m-3">Personagens principais:</h5>
+
+    <div class="card text-bg-dark centered" style="width: 95%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/eleven1986.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="display-6">Eleven</h5>
+            <p class="card-text">Eleven/Onze era cobaia do Laboratório de Hawkins, sendo filha única de Terry Ives e
+              Andrew Rich. Em novembro de 1983, ela escapou do laboratório e foi encontrada na floresta por Mike, Lucas
+              e Dustin enquanto procuravam Will Byers.</p>
+            <a href="eleven.html"><button type="button" class="btn btn-danger"><i class="bi bi-book"></i> Leia
+                Mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card text-bg-dark centered" style="width: 95%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/mike1986.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="display-6">Mike Wheeler</h5>
+            <p class="card-text">É o melhor amigo de Will Byers, Lucas Sinclair e Dustin Henderson, também sendo irmão
+              de Nancy. Ficou amigo de Eleven, eventualmente formando uma forte ligação com ela.</p>
+            <a href="mike.html"><button type="button" class="btn btn-danger"><i class="bi bi-book"></i> Leia
+                Mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card text-bg-dark centered" style="width: 95%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/will1986.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="display-6">Will Byers</h5>
+            <p class="card-text">Will é amigável e honesto. Como seus amigos, ele é extremamente inteligente para sua
+              idade, tendo um entusiasmo pela ciência e sendo membro do clube AV da escola.</p>
+            <a href="will.html"><button type="button" class="btn btn-danger"><i class="bi bi-book"></i> Leia
+                Mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card text-bg-dark centered" style="width: 95%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/lucas1986.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="display-6">Lucas Sinclair</h5>
+            <p class="card-text">Em 1983, o amigo de Lucas, Will misteriosamente desapareceu, então Lucas e os seus
+              outros amigos, Mike e Dustin, saíram para procurá-lo, mas encontraram uma garota chamada Onze que tinha
+              poderes telecinéticos.</p>
+            <a href="lucas.html"><button type="button" class="btn btn-danger"><i class="bi bi-book"></i> Leia
+                Mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card text-bg-dark centered" style="width: 95%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/max1986.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="display-6">Max Mayfield</h5>
+            <p class="card-text">Após o divórcio de seus pais e o novo casamento de sua mãe, Max e sua família se
+              mudaram da Califórnia para Hawkins , Indiana em outubro de 1984.</p>
+            <a href="max.html"><button type="button" class="btn btn-danger"><i class="bi bi-book"></i> Leia
+                Mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card text-bg-dark centered" style="width: 95%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/dustin1986.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="display-6">Dustin Henderson</h5>
+            <p class="card-text">"Agora que você acabou o liceu, o que significa que você tecnicamente é um adulto, não
+              acha que é tempo de ultrapassar construções primitivas como a popularidade?"</p>
+            <a href="dustin.html"><button type="button" class="btn btn-danger"><i class="bi bi-book"></i> Leia
+                Mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+
+  <footer class="bg-dark text-center text-white mt-3">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <img src="media/cotil.png">
+      <div class="mt-3"> © 2020 Copyright: Davie & Samuel</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

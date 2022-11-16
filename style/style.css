@@ -8,7 +8,7 @@
     display: inline-flex;
 }
 
-.teste {
+.ctblack {
     background-color: rgb(40, 46, 51);
     color: white;
     border-radius: 20px;
@@ -23,7 +23,13 @@ body {
 @media (max-width: 767px) {
     body {
         background-image: url(../media/bodybgcell.jpg);
+        background-position: bottom;
     }
+}
+
+.centered {
+    margin: 0 auto !important;
+    float: none !important;
 }
 
 .mycarou {

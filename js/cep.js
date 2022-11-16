@@ -3,7 +3,6 @@ $("#cep").blur(function () {
     var cep = this.value.replace("/[^0-9]/", "");
     var cep = cep.replace(".", "");
     var cep = cep.replace("-", "");
-    console.log(cep);
 
     // Validação do CEP; caso o CEP não possua 8 números, então cancela
     // a consulta
