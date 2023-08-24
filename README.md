@@ -6,7 +6,7 @@ Nota: 10,0.
 
 ## Stack utilizada
 
-**Front-end:** HTML, CSS, BootStrap
+**Front-end:** HTML, CSS, BootStrap, JavaScript
 
 ## Autores
 
